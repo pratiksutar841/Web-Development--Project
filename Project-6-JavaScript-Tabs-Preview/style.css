@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #00d8ff;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    transition: all 1s;
+  }
+  
+  .wrapper {
+    width: 750px;
+    height: 400px;
+    box-shadow: 0px 2px 4px black;
+    background: white;
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .container {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.459);
+  }
+  
+  nav {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gainsboro;
+    z-index: 8;
+    background: white;
+    color: rgb(150, 240, 177);
+  }
+  
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  
+  .link:hover {
+    color: #333; /* Change tab text color on hover */
+  }
+  
+  
+  .link.tabOne {
+    background-color: #4e5052;
+    color: white;
+  }
+  
+  .link.tabTwo {
+    background-color: #42b883;
+    color: white;
+  }
+  
+  .link.tabThree {
+    background-color: #b52e31;
+    color: white;
+  }
+  
+  
+  .info {
+    display: flex;
+    width: 750px;
+    height: 100%;
+    padding-top: 2rem;
+  }
+  
+  .item {
+    width: 850px;
+    color: #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .link {
+    transition: all 0.3s;
+  }
+  
+
+  .neon-glow {
+    animation: neon-glow-animation 1.5s infinite alternate;
+  }
+  
+  @keyframes neon-glow-animation {
+    0% {
+      box-shadow: 0px 0px 10px rgba(255, 0, 0, 1);
+    }
+    100% {
+      box-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
+    }
+  }
+  
+  .item.active i {
+    font-size: 9rem; /* Adjust icon size for active tab */
+  }
+  

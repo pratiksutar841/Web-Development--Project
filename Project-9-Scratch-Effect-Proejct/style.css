@@ -1,0 +1,36 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        0deg,
+        #fff 0%,
+        #fff 50%,
+        #000 50%,
+        #000 100%
+    ),
+    repeating-linear-gradient(90deg, #aaa 0%, red 50%, red 50% , #555 100%);
+    background-size: 30px 30px;
+    background-blend-mode: difference;
+    cursor: grab;
+    
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #333;
+    pointer-events: none;
+    border-radius: 50%;
+    background: url(https://th.bing.com/th/id/R.df7f11430c5a19fab23a08ab39b0c0ba?rik=VvZnZ7O1n6A5KQ&riu=http%3a%2f%2fwww.viajejet.com%2fwp-content%2fviajes%2fpaisajes-de-la-india-taj-mahal.jpg&ehk=T6acAcDh%2fbJ3KLn7jJ171akJ8P4xjSYoQXNn%2bpiX7EI%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-attachment: fixed;
+}
